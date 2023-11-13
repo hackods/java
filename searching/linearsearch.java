@@ -13,7 +13,7 @@ public class linearsearch {
         n = sc.nextInt();
         for (i=0; i<10; i++)
         {
-            if (a[i]==n)
+            if (arr[i]==n)
             {
                 c=1;
             }
@@ -30,6 +30,5 @@ public class linearsearch {
         {
             System.out.println(n+ "is not present in the array.");
         }
-        sc.close();
     }
 }
