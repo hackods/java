@@ -1,4 +1,4 @@
-package stringcodes;
+package integercodes;
 import java.util.Scanner;
 public class integerpalindrome {
     public static void main(String[] args) {
