@@ -4,18 +4,21 @@ public class linearsearch {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int arr[] = new int[10];
-        int i, c=0, n;
-        for (i=0; i<10; i++)
+        int c=0, n, p=0;
+        for (int i=0; i<10; i++)
         {
             arr[i] = sc.nextInt();
         }
         System.out.print("Enter number to be searched: ");
         n = sc.nextInt();
-        for (i=0; i<10; i++)
+        sc.close();
+        for (int i=0; i<10; i++)
         {
             if (arr[i]==n)
             {
                 c=1;
+                p=i;
+                break;
             }
             else
             {
@@ -24,7 +27,7 @@ public class linearsearch {
         }
         if (c==1)
         {
-            System.out.println(n+ "is present in position " +i+ " of the array.");
+            System.out.println(n+ "is present in position " +p+ " of the array.");
         }
         else
         {
