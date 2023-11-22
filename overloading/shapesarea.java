@@ -38,7 +38,7 @@ public class shapesarea
                 double z = sc.nextDouble();
                 c1 = ob.area(x, y, z);
                 System.out.println("Area: "+c1);
-                System.exit(0);
+                break;
             case 2:
                 System.out.print("Enter length of parallel sides and height:");
                 int p = sc.nextInt();
@@ -46,7 +46,7 @@ public class shapesarea
                 int h = sc.nextInt();
                 c1 = ob.area(p, q, h);
                 System.out.println("Area: "+c1);
-                System.exit(0);
+                break;
             case 3:
                 System.out.println("Enter length of 2 diagonals: ");
                 double d1 = sc.nextInt();
@@ -56,7 +56,7 @@ public class shapesarea
                 System.exit(0);
             default:
                 System.out.println("Wrong Input!");
-                System.exit(0);
+                break;
         }
         sc.close();
     }
