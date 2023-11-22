@@ -5,7 +5,8 @@ public class shapesarea
     double area (double a, double b, double c)
     {
         double s = (a+b+c)/2;
-        double ar = Math.sqrt(s*(s-a)*(s-b)*(s-c));
+        double v = s*(s-a)*(s-b)*(s-c);
+        double ar = Math.sqrt(v);
         return ar;
     }
     double area (int a, int b, int height)
@@ -44,18 +45,19 @@ public class shapesarea
                 int q = sc.nextInt();
                 int h = sc.nextInt();
                 c1 = ob.area(p, q, h);
+                System.out.println("Area: "+c1);
                 break;
             case 3:
                 System.out.println("Enter length of 2 diagonals: ");
                 double d1 = sc.nextInt();
                 double d2 = sc.nextInt();
                 c1 = ob.area(d1, d2);
+                System.out.println("Area: "+c1);
                 break;
             default:
                 System.out.println("Wrong Input!");
                 System.exit(0);
         }
-        System.out.println("Area: "+c1);
         sc.close();
     }
 }
