@@ -29,7 +29,7 @@ public class shapesarea
                             +"\n3. Area of rhombus.");
         System.out.print("Enter choice: ");
         int c = sc.nextInt();
-        double c1 = 0;
+        double c1;
         switch (c) {
             case 1:
                 System.out.print("Enter length of 3 sides: ");
