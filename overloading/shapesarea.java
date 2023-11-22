@@ -12,13 +12,13 @@ public class shapesarea
     double area (int a, int b, int height)
     {
         double ar;
-        ar = (1/2)*height*(a+b);
+        ar = (0.5)*height*(a+b);
         return ar;
     }
     double area (double diagonal1, double diagonal2)
     {
         double ar;
-        ar = (1/2)*diagonal1*diagonal2;
+        ar = (0.5)*diagonal1*diagonal2;
         return ar;
     }
     public static void main(String[] args) {
@@ -38,7 +38,7 @@ public class shapesarea
                 double z = sc.nextDouble();
                 c1 = ob.area(x, y, z);
                 System.out.println("Area: "+c1);
-                break;
+                System.exit(0);
             case 2:
                 System.out.print("Enter length of parallel sides and height:");
                 int p = sc.nextInt();
@@ -46,14 +46,14 @@ public class shapesarea
                 int h = sc.nextInt();
                 c1 = ob.area(p, q, h);
                 System.out.println("Area: "+c1);
-                break;
+                System.exit(0);
             case 3:
                 System.out.println("Enter length of 2 diagonals: ");
                 double d1 = sc.nextInt();
                 double d2 = sc.nextInt();
                 c1 = ob.area(d1, d2);
                 System.out.println("Area: "+c1);
-                break;
+                System.exit(0);
             default:
                 System.out.println("Wrong Input!");
                 System.exit(0);
