@@ -53,7 +53,7 @@ public class shapesarea
                 double d2 = sc.nextInt();
                 c1 = ob.area(d1, d2);
                 System.out.println("Area: "+c1);
-                System.exit(0);
+                break;
             default:
                 System.out.println("Wrong Input!");
                 break;
