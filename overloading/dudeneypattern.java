@@ -2,12 +2,12 @@ package overloading;
 import java.util.Scanner;
 public class dudeneypattern{
     public void print(){
-        int i, j, k=1;
-        for (i = 1; i<4; i++)
+        int k=1;
+        for (int i = 1; i<=4; i++)
         {
-            for (j = 1; j<i; j++)
+            for (int j = 1; j<=i; j++)
             {
-                System.out.print(k);
+                System.out.print(k +" ");
                 k++;
             }
             System.out.println();
@@ -21,7 +21,8 @@ public class dudeneypattern{
             s = s+p;
             n = n/10;
         }
-        if (s==a)
+        int x = (int) Math.pow(s, 3);
+        if (x==a)
         {
             return true;
         }
@@ -34,7 +35,7 @@ public class dudeneypattern{
         Scanner sc = new Scanner(System.in);
         dudeneypattern ob = new dudeneypattern();
         System.out.println("1. Pattern."
-                            +"2. Dudeney Check.");
+                            +"\n2. Dudeney Check.");
         System.out.print("Enter Choice: ");
         int c = sc.nextInt();
         switch (c) {
@@ -53,6 +54,7 @@ public class dudeneypattern{
                 {
                     System.out.println("Not Dudeney Number.");
                 }
+                break;
             default:
                 System.out.println("Wrong Choice!");
                 System.exit(0);
