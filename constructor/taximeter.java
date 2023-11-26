@@ -40,10 +40,17 @@ public class taximeter
             amt = 25+(5*10)+(5*15)+(5*20)+((km-18)*25);
         }
     }
+    public void display()
+    {
+        System.out.println("Taxi Number: "+taxino
+                            +"\nName: "+name
+                            +"\nDistance: "+km
+                            +"\nAmount: "+amt);
+    }
     public static void main(String[] args) {
         taximeter ob = new taximeter();
-        ob.calculate();
         ob.input();
         ob.calculate();
+        ob.display();
     }
 }
