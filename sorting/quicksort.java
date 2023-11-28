@@ -1,5 +1,5 @@
 package sorting;
-
+import java.util.Scanner;
 public class quicksort {
     public int part(int[] arr, int l, int h) {
         int p = arr[h];
@@ -26,10 +26,17 @@ public class quicksort {
         }
     }
     public static void main(String[] args) {
-        int a[] = {78, 90, 65, 56, 97979, 12000000};
+        Scanner sc = new Scanner(System.in);
+        int a[] = new int[5];
         quicksort ob = new quicksort();
+        System.out.println("Enter 5 numbers: ");
+        for (int i=0; i<5; i++)
+        {
+            a[i] = sc.nextInt();
+        }
         ob.sort(a, 0, 5);
 
         for(int x: a) System.out.println(x);
+        sc.close();
     } 
 }
