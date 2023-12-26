@@ -14,7 +14,7 @@ public class niven {
             s = s+p;
             n = n/10;
         }
-        if (n%s==0)
+        if (m%s==0)
         {
             System.out.println("Niven Number.");
         }
