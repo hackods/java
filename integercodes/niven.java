@@ -5,6 +5,7 @@ public class niven {
         Scanner sc = new Scanner (System.in);
         System.out.print("Enter a number: ");
         int n = sc.nextInt();
+        sc.close();
         int m=n;
         int s=0, p;
         while (n>0)
