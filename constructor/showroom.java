@@ -13,7 +13,7 @@ public class showroom {
     public void input()
     {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enetr Name and cost: ");
+        System.out.println("Enter Name and cost: ");
         name = sc.nextLine();
         cost = sc.nextDouble();
         sc.close();
