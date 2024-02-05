@@ -1,5 +1,4 @@
 package constructor;
-import java.io.FileReader;
 import java.util.Scanner;
 public class FruitJuice {
     int product_code, pack_size;
@@ -24,6 +23,7 @@ public class FruitJuice {
         pack_type = sc.nextLine();
         System.out.print("Enter product price: ");
         product_price = sc.nextDouble();
+        sc.close();
     }
     public void discount()
     {
@@ -40,7 +40,7 @@ public class FruitJuice {
     public static void main(String[] args) {
         FruitJuice ob = new FruitJuice();
         ob.input();
-        ob.discount();
+        ob.discount ();
         ob.display();
     }
 }
