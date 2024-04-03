@@ -19,7 +19,7 @@ public class sumDigits {
             else
             {
                 continue;
-            }
+            }   
         }
         System.out.println("Sum of digits: "+sum);
     }
