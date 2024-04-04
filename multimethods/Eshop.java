@@ -9,6 +9,7 @@ public class Eshop {
         System.out.println("Enter name and price: ");
         name = sc.nextLine();
         price = sc.nextDouble();
+        sc.close();
     }
     public void calculate()
     {
