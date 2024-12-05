@@ -11,7 +11,7 @@ public class average {
             System.out.println("Enter marks for Physics: ");
             phy[i] = sc.nextInt();
             System.out.println("Enter marks for Chemistry: ");
-            chem[i] =  sc.nextInt();
+            chem[i] = sc.nextInt();
             System.out.println("Enter marks for Mathematics: ");
             maths[i] = sc.nextInt();
         }
